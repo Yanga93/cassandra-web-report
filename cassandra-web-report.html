@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Cassandra Web-Report</title>
+    <meta charset="utf-8">
+    <title>Cassandra Web-Report</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css">
+
 </head>
 <body>
 
-<h1>Cassandra Web-Repot</h1>
+    <div class="container mb-3 mt-3">
+         <table class="table table-striped table-bordered mydatatable" style="width: 100%">
+            <thead>
+              <tr>
+                  <th>Check ID</th>
+                  <th>Server Name</th>
+                  <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DF-001</td>
+                <td>pbdpc01zafsrh</td>
+                <td>Pass</td>
+              </tr>
+              <tr>
+                <td>DF-002</td>
+                <td>pbdpc02zafsrh</td>
+                <td>Pass</td>
+              </tr>
+              <tr>
+                <td>DF-003</td>
+                <td>pbdpc03zafsrh</td>
+                <td>Pass</td>
+              </tr>
+              <tr>
+                <td>DF-004</td>
+                <td>pbdpc04zafsrh</td>
+                <td>Pass</td>
+              </tr>
+              <tr>
+                <td>DF-005</td>
+                <td>pbdpc05zafsrh</td>
+                <td>Pass</td>
+              </tr>
+              <tr>
+                <td>SS-001</td>
+                <td>pbdpc01zatcrh</td>
+                <td>Pass</td>
+              </tr>
+              <tr>
+                <td>SS-002</td>
+                <td>pbdpc02zatcrh</td>
+                <td>Fail</td>
+              </tr>
+              <tr>
+                <td>SS-003</td>
+                <td>pbdpc03zatcrh</td>
+                <td>Pass</td>
+              </tr>
+              <tr>
+                <td>SS-004</td>
+                <td>pbdpc04zatcrh</td>
+                <td>Pass</td>
+              </tr>
+              <tr>
+                <td>SS-005</td>
+                <td>pbdpc05zatcrh</td>
+                <td>Pass</td>
+              </tr>
 
+            </tbody>
+            <tfoot>
+              <tr>
+                  <th>Check ID</th>
+                  <th>Server Name</th>
+                  <th>Status</th>
+              </tr>
+            </tfoot>
+         </table>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $('.mydatatable').DataTable();
+    </script>
 
 </body>
 </html>
